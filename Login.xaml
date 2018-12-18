@@ -1,0 +1,21 @@
+﻿<Window x:Class="SchoolBilling.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SchoolBilling"
+        mc:Ignorable="d"
+        Title="Login" Height="339" Width="300" FontSize="14" Background="#04c582" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Border Background="#2e3137" CornerRadius="20" Margin="20">
+        <StackPanel Margin="20" FocusManager.FocusedElement="{Binding ElementName=txtUsername}">
+            <Label Content="Login" Foreground="White" FontSize="25" HorizontalAlignment="Center"/>
+            <Separator></Separator>
+            <Label Content="Usuario" Foreground="White"/>
+            <TextBox Name="txtUsername" Background="#545d6a" Foreground="White" FontSize="18" />
+            <Label Content="Contraseña" Foreground="White"/>
+            <PasswordBox KeyDown="txtPassword_KeyDown" Name="txtPassword" Background="#545d6a" Foreground="White" FontSize="18"/>
+            <Button x:Name="btnSubmit" Click="btnSubmit_Click" Content="Entrar" Margin="60 15" Background="#545d6a" Foreground="White" FontSize="18"/>
+        </StackPanel>
+    </Border>
+
+</Window>
